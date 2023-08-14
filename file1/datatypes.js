@@ -19,7 +19,7 @@ let num2=Symbol('123')
 let array=[2,3,4,5,5]
 console.log(typeof array)
 let object={
-    name:"sbsj",
+    name:"asaj",
     age:"23"
     
 }
