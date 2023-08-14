@@ -30,3 +30,10 @@ function fname(){
 }
 console.log(typeof fname)
 console.log(typeof bignum)
+
+//anything starting with string changes all value to string
+console.log("20"+89+3)
+
+
+//similarly vice-versa
+console.log(2+3+"5")
