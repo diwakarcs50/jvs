@@ -37,3 +37,5 @@ console.log("20"+89+3)
 
 //similarly vice-versa
 console.log(2+3+"5")
+
+//PERFORM CONVERSIONS
