@@ -34,3 +34,14 @@ function user(arrive){
 
 }
 user(obj1)
+
+
+//scopes
+if(true){
+    let a= 10
+    const b=20
+    var c=30//it gives the value even outside the scope which is not a good practice
+}
+// console.log(a);
+// console.log(b);
+console.log(c);
