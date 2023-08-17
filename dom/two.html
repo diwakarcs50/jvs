@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weekdays</title>
+    <style>
+        .all{
+            background-color: #212121;color: #fff;
+        }
+        
+    </style>
+</head>
+<body class="all">
+    <div >
+        <ul class="parent">
+            <li class="one">monday</li>
+            <li>tuesday</li>
+            <li>wednesday</li>
+            <li>thursay</li>
+        </ul>
+    </div>
+</body>
+<script>
+    // const parent=document.querySelector('.parent')
+    // console.log(parent.children)
+    // console.log(parent.firstElementChild)
+    // console.log(parent.lastElementChild)
+    // console.log(parent.Nodelist)
+    // console.log("Nodes",parent.childNodes)//this is very important as it also includes enter or comment or any activity in its list
+
+   const child=document.querySelector('.one')
+   console.log(child)
+   console.log(child.parentElement)
+   console.log(child.nextElementSibling)
+   
+</script>
+</html>
