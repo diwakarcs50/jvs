@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur me</h1>
+    <button id="start">start</button>
+    <button id="nonStop">nonStop</button>
+</body>
+<script>
+    const start=function(){
+        console.log("diwakar")
+    }
+    document.querySelector('#start').addEventListener('click', function(){
+        setTimeout(start,2000)
+    })
+
+    const nonStop=()=>{
+        console.log("i am coming")
+    }
+
+    document.querySelector('#nonStop').addEventListener('click',function(){
+        setInterval(nonStop,3000)
+    })
+
+    //in order to stop we can use 
+    //clearTimeout
+    //clearInterval
+    
+</script>
+</html>
