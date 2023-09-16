@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+          background-color: #313131;
+        }
+    </style>
+</head>
+<body>
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+    
+</body>
+
+<script>
+    // function outer(){
+    //     const name="diwakar"
+    //     function inner(){
+    //         console.log(name)
+    //     }
+    //     return inner;
+
+    // }
+    const control=function(){
+        document.body.style.backgroundColor="orange"
+    }
+
+    document.getElementById('orange').onclick=control
+
+    // function changeColor(color){
+     
+    //     return function control(){
+    //         document.body.style.backgroundColor=`${color}`
+    //     }
+    // }
+    // document.getElementById('orange').onclick=changeColor('orange')
+    // document.getElementById('green').onclick=changeColor('green')
+
+    //closure and lexical scoping 
+</script>
+</html>

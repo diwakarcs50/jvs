@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .all{
+        background-color: #212121; color: #fff;
+         }
+</style>
+<body class="all">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+  function add(langname){
+          const ul=document.querySelector('.language')
+          const li=document.createElement('li')
+          li.innerHTML=`${langname}`
+          ul.appendChild(li);
+
+  }        
+  add("python")
+  add("golang")
+
+  //optimise edit
+function addlanguage(langname){
+    const li=document.createElement('li')
+    li.appendChild(document.createTextNode(langname))
+    document.querySelector('.language').appendChild(li)
+
+}
+addlanguage("java")
+
+//edit
+const li=document.querySelector('li:nth-child(2)')
+const newli=document.createElement('li')
+newli.textContent="ruby"
+li.replaceWith(newli)
+
+//edit
+const ele=document.querySelector('li:first-child')
+const newlis=document.createElement('li')
+const text=document.createTextNode("typescript")//add in document
+newlis.appendChild(text)
+ele.replaceWith(newlis)
+
+  
+//remove
+const last=document.querySelector('li:last-child')
+last.remove()
+
+
+</script>
+</html>
